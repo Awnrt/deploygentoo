@@ -1,3 +1,10 @@
+LIGHTGREEN='\033[1;32m'
+LIGHTRED='\033[1;91m'
+WHITE='\033[1;97m'
+MAGENTA='\033[1;35m'
+CYAN='\033[1;96m'
+NoColor='\033[0m'
+
 source /etc/profile
 mount /dev/$disk_drive /boot
 emerge-webrsync
@@ -35,3 +42,9 @@ emerge sys-boot/grub
 grub-install --target=x86_64-efi --efi-directory=/boot
 grub-mkconfig -o /boot/grub/grub.cfg
 
+cd /etc/portage/package.use/
+rm -f zz-autounmask
+wget https://raw.githubusercontent.com/Awnrt/deploygentoo/main/portage/package.use/zz-autounmask
+printf ${NoColor}""
+printf ${LIGHTGREEN}"Installation is complete"
+printf ${NoColor}""
