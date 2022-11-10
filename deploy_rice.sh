@@ -1,5 +1,5 @@
 DEPLIST="`sed -e 's/#.*$//' -e '/^$/d' dependencies.txt | tr '\n' ' '`"
-emerge --autounmask-continue -q $DEPLIST
+doas emerge --autounmask-continue -q $DEPLIST
 
 cd $HOME
 git clone https://github.com/awnrt/dwm
