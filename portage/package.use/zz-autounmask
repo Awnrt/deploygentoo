@@ -1,0 +1,38 @@
+# package.use# required by media-libs/mesa-22.1.7::gentoo
+# required by media-libs/libepoxy-1.5.10-r1::gentoo[egl]
+# required by x11-base/xorg-server-21.1.4::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.2.1::gentoo
+# required by x11-base/xorg-drivers-21.1-r1::gentoo[input_devices_libinput]
+# required by x11-base/xorg-drivers (argument)
+>=media-libs/libglvnd-1.4.0 X
+# required by x11-base/xorg-server-21.1.4::gentoo[elogind]
+# required by x11-drivers/xf86-input-libinput-1.2.1::gentoo
+# required by x11-base/xorg-drivers-21.1-r1::gentoo[input_devices_libinput]
+# required by x11-base/xorg-drivers (argument)
+>=sys-auth/pambase-20220214 elogind
+# required by x11-libs/gtk+-3.24.34-r1::gentoo
+# required by x11-themes/adwaita-icon-theme-42.0_p2::gentoo
+>=x11-libs/cairo-1.16.0-r6 X
+# required by media-sound/pulseaudio-daemon-16.1::gentoo
+>=media-libs/libpulse-16.1-r1 X
+# # required by media-sound/pulseaudio-daemon-16.1::gentoo[alsa-plugin,alsa]
+# # required by media-libs/libpulse-16.1-r1::gentoo
+# # required by media-sound/pulseaudio-16.1::gentoo
+# # required by www-client/firefox-bin-106.0.5::gentoo[pulseaudio]
+# # required by firefox-bin (argument)
+>=media-plugins/alsa-plugins-1.2.7.1 pulseaudio
+# required by app-emulation/libvirt-8.7.0-r1::gentoo[virt-network]
+# # required by libvirt (argument)
+>=net-dns/dnsmasq-2.86-r1 script
+# required by app-emulation/virt-manager-4.0.0::gentoo[gtk,-test]
+# # required by @selected
+# # required by @world (argument)
+>=net-misc/spice-gtk-0.41 usbredir
+# # required by app-emulation/virt-manager-4.0.0::gentoo[gtk,-test]
+# # required by @selected
+# # required by @world (argument)
+>=sys-apps/dbus-1.14.0-r4 X
+# required by app-crypt/swtpm-0.7.3::gentoo[gnutls]
+# # required by swtpm (argument)
+>=net-libs/gnutls-3.7.7 pkcs11 tools
+
