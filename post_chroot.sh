@@ -6,7 +6,7 @@ CYAN='\033[1;96m'
 NoColor='\033[0m'
 
 source /etc/profile
-mount /dev/$disk_drive /boot
+mount /dev/$disk_drive"1" /boot
 emerge-webrsync
 emerge --verbose --update --deep --newuse @world
 echo "Europe/Moscow" > /etc/timezone
