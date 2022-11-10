@@ -45,6 +45,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 cd /etc/portage/package.use/
 rm -f zz-autounmask
 wget https://raw.githubusercontent.com/Awnrt/deploygentoo/main/portage/package.use/zz-autounmask
+cd /
+rm -f post_chroot.sh
+
 printf ${NoColor}""
 printf ${LIGHTGREEN}"Installation is complete"
-printf ${NoColor}""
+printf ${NoColor}"\n"
