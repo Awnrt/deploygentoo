@@ -4,4 +4,5 @@ xinput --set-prop 'pointer:''Kingston HyperX Pulsefire Haste' 'libinput Accel Pr
 xrdb ~/.Xresources
 #picom -b
 #conky | while read -r; do xsetroot -name "$REPLY"; done &
+slstatus &
 exec dwm
