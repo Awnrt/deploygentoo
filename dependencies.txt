@@ -27,4 +27,4 @@ www-client/firefox-bin
 
 #fonts
 media-fonts/ubuntu-font-family
-
+media-fonts/fontawesome
