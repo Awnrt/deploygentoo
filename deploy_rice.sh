@@ -1,8 +1,8 @@
-emerge --unmerge dev-lang/rust
-emerge --oneshot virtual/rust dev-lang/rust-bin
-emerge --update --deep @world
-emerge --depclean
-echo 'dev-lang/rust' >> /etc/portage/package.mask
+#emerge --unmerge dev-lang/rust
+#emerge --oneshot virtual/rust dev-lang/rust-bin
+#emerge --update --deep @world
+#emerge --depclean
+#echo 'dev-lang/rust' >> /etc/portage/package.mask
 
 DEPLIST="`sed -e 's/#.*$//' -e '/^$/d' dependencies.txt | tr '\n' ' '`"
 sudo emerge --autounmask-continue -q $DEPLIST
