@@ -10,6 +10,7 @@ USE="font-styles perl xft unicode3 mousewheel blink 256-color"sudo emerge rxvt-u
 cd /home/awy
 git clone https://github.com/awnrt/dwm
 git clone https://github.com/awnrt/dmenu
+git clone https://github.com/awnrt/slstatus
 cd home/awy/dwm
 make clean install
 cd /home/awy/dmenu
@@ -18,6 +19,7 @@ make clean install
 cd /home/awy/deploygentoo/rice/dots
 cp .xinitrc /home/awy/
 cp .Xresources /home/awy/
+cp .bash_profile /home/awy/
 
 sudo mkdir /etc/X11/xorg.conf.d
 sudo mkdir /etc/modules-load.d
