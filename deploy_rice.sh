@@ -6,7 +6,7 @@
 
 DEPLIST="`sed -e 's/#.*$//' -e '/^$/d' dependencies.txt | tr '\n' ' '`"
 sudo emerge --autounmask-continue -q $DEPLIST
-USE="font-styles perl xft unicode3 mousewheel blink 256-color"sudo emerge rxvt-unicode
+#USE="font-styles perl xft unicode3 mousewheel blink 256-color"sudo emerge rxvt-unicode
 cd /home/awy
 git clone https://github.com/awnrt/dwm
 git clone https://github.com/awnrt/dmenu
