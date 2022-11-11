@@ -20,6 +20,9 @@ cd /home/awy/deploygentoo/rice/dots
 cp .xinitrc /home/awy/
 cp .Xresources /home/awy/
 cp .bash_profile /home/awy/
+#cd /usr/lib64/urxvt/perl/
+#sudo git clone https://github.com/majutsushi/urxvt-font-size
+#sudo mv urxvt-font-size/font-size .
 
 sudo mkdir /etc/X11/xorg.conf.d
 sudo mkdir /etc/modules-load.d

@@ -55,3 +55,7 @@ URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
+
+
+!! URxvt Functions
+URxvt.perl-ext-common:	font-size
