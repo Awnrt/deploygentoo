@@ -1,12 +1,5 @@
-#emerge --unmerge dev-lang/rust
-#emerge --oneshot virtual/rust dev-lang/rust-bin
-#emerge --update --deep @world
-#emerge --depclean
-#echo 'dev-lang/rust' >> /etc/portage/package.mask
-
 DEPLIST="`sed -e 's/#.*$//' -e '/^$/d' dependencies.txt | tr '\n' ' '`"
 sudo emerge --autounmask-continue -q $DEPLIST
-#USE="font-styles perl xft unicode3 mousewheel blink 256-color"sudo emerge rxvt-unicode
 cd /home/awy
 git clone https://github.com/awnrt/dwm
 git clone https://github.com/awnrt/dmenu
@@ -17,12 +10,13 @@ cd /home/awy/dmenu
 make clean install
 
 cd /home/awy/deploygentoo/rice/dots
-cp .xinitrc /home/awy/
-cp .Xresources /home/awy/
-cp .bash_profile /home/awy/
-#cd /usr/lib64/urxvt/perl/
-#sudo git clone https://github.com/majutsushi/urxvt-font-size
-#sudo mv urxvt-font-size/font-size .
+cp -f .xinitrc /home/awy/
+cp -f .Xresources /home/awy/
+cp -f .bash_profile /home/awy/
+cp -f .bashrc /home/awy/
+cd /usr/lib64/urxvt/perl/
+sudo git clone https://github.com/majutsushi/urxvt-font-size
+sudo mv urxvt-font-size/font-size .
 
 sudo mkdir /etc/X11/xorg.conf.d
 sudo mkdir /etc/modules-load.d
