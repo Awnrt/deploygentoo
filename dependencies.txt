@@ -15,7 +15,7 @@ x11-drivers/nvidia-drivers
 x11-misc/unclutter
 x11-misc/xclip
 #x11-misc/pcmanfm
-#x11-terms/rxvt-unicode
+x11-terms/rxvt-unicode
 #x11-apps/xbacklight
 
 #misc
@@ -23,7 +23,7 @@ app-editors/neovim
 app-editors/vim
 sys-process/htop
 media-sound/alsa-utils
-www-client/firefox-bin
+#www-client/firefox-bin
 
 #fonts
 media-fonts/ubuntu-font-family
