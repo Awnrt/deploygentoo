@@ -5,9 +5,11 @@ git clone https://github.com/awnrt/dwm
 git clone https://github.com/awnrt/dmenu
 git clone https://github.com/awnrt/slstatus
 cd home/awy/dwm
-make clean install
+sudo make clean install
 cd /home/awy/dmenu
-make clean install
+sudo make clean install
+cd /home/awy/slstatus
+sudo make clean install
 
 cd /home/awy/deploygentoo/rice/dots
 cp -f .xinitrc /home/awy/
