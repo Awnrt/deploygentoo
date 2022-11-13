@@ -21,7 +21,5 @@ sudo git clone https://github.com/majutsushi/urxvt-font-size
 sudo mv urxvt-font-size/font-size .
 
 sudo mkdir /etc/X11/xorg.conf.d
-sudo mkdir /etc/modules-load.d
 sudo cp /home/awy/deploygentoo/nvidia/nvidia.conf /etc/X11/xorg.conf.d/nvidia.conf
-sudo cp /home/awy/deploygentoo/nvidia/video.conf /etc/modules-load.d/video.conf
 sudo rc-update add elogind boot
