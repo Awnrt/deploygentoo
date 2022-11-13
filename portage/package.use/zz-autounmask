@@ -1,5 +1,5 @@
 app-emulation/qemu gtk sdl spice usb usbredir
-app-emulation/virt-manager gtk
+app-emulation/virt-manager gtk gui
 x11-terms/rxvt-unicode font-styles perl xft unicode3 mousewheel blink 256-color
 # package.use# required by media-libs/mesa-22.1.7::gentoo
 # required by media-libs/libepoxy-1.5.10-r1::gentoo[egl]
